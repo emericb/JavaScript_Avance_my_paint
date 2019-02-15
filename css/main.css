@@ -1,0 +1,113 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: lightgrey;
+}
+
+#controls, #properties {
+	color: #663977;
+	height: 100px;
+	background-color: #8c8e92;
+	border-bottom: 2px solid #8c8e92;
+}
+
+.container{
+	float: left;
+	position: relative;
+	margin: 10px 0 0 20px;
+	height: 80px;
+	width: 100px;
+	border-right: 1px solid #A5B8D0;
+}
+
+input[type="button"]{
+	width: 86px;
+}
+
+input[type="number"]{
+	width: 40px;
+	position: absolute;
+	right: 10px;
+}
+
+input[type="color"]{
+	widows: 50px;
+	height: 40px;
+	margin: 10px 0 0 12px;
+}
+
+#controls .name{
+	position: absolute;
+	bottom: -20px;
+	width: 80px;
+	text-align: center;
+	right: 20px;
+	font: 12px Arial;
+	color: #29212f;
+}
+
+#tool-images {
+	width: 90px;
+	margin: 5px 0 10px 0px;
+}
+
+#pencil, #eraser, #circle, #line, #circle_fill, #rect, #rect_fill {
+	width: 20px;
+}
+
+#tool-images img:hover, .tool-active{
+	cursor: pointer;
+	border: 1px solid blue;
+}
+
+#tool-size ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#tool-size li:hover, .size-active{
+	cursor: pointer;
+	border: 1px solid orange;
+	border-radius: 2px;
+	background-color: #FFDC88;
+}
+
+/*CANVAS*/
+
+#canvases {
+	position: relative;
+	margin: 5px 0 0 5px;
+}
+
+#canvases:hover {
+	cursor: pointer;
+}
+
+#back-canvas{
+	position: absolute;
+	left: 0;
+	
+	background-color: white;
+}
+
+#front-canvas{
+	position: absolute;
+	left: 0;
+	
+}
+
+/*Properties*/
+
+#properties{
+	position: fixed;
+	right: 5px;
+	width: 130px;
+	height: 150px;
+	padding: 0 10px 0 10px;
+}
+
+#properties input{
+	margin-right: 5px;
+	width: 60px;
+}
